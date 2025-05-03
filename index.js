@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const VERIFY_TOKEN = "ton_token_webhook_meta";
+// ✅ Ton vrai token Meta ici
+const VERIFY_TOKEN = "cap_2025_webhook";
 
 app.use(express.json());
 
@@ -26,3 +27,4 @@ app.post("/webhook", (req, res) => {
 app.listen(port, () => {
   console.log(`Webhook en ligne sur le port ${port}`);
 });
+
